@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class Game extends StatefulWidget {
@@ -25,7 +27,11 @@ class _GameState extends State<Game> {
                 ),
               ),
             ),
-            Image.asset("images/padrao.png"),
+            GestureDetector(
+                onTap: () => {print("Um clique na imagem")},
+                onDoubleTap: () => {print("Dois cliques na imagem")},
+                onLongPress: () => {print("Clique longo")},
+                child: (Image.asset("images/padrao.png"))),
             Padding(
               padding: EdgeInsets.only(top: 31, bottom: 16),
               child: Text(
