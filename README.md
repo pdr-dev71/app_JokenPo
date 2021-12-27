@@ -1,16 +1,19 @@
-# jokenpo
+# Aplicativo > JokenPo
 
-A new Flutter project.
+## :computer: Sobre o Aplicativo 
+O aplicativo **JokenPo** é uma aplicação criada atraves das aulas do curso de desenvolvimento moble do instrutor **Jamilton Damasceno** do curso de flutter [Desenvolvimento Android e IOS com Flutter 2021 - Crie 15 Apps](https://www.udemy.com/course/desenvolvimento-android-e-ios-com-flutter/) o qual foi a base para criação dessa aplicação.
 
-## Getting Started
+## :art: Layout do Aplicativo
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Tela Incial
+[![Screenshot-20211227-123843.jpg](https://i.postimg.cc/Hx4ggYfK/Screenshot-20211227-123843.jpg)](https://postimg.cc/YG9VNH2f)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Usuario escolhe pedra
+[![Screenshot-20211227-123910.jpg](https://i.postimg.cc/mDTn7Q5X/Screenshot-20211227-123910.jpg)](https://postimg.cc/GBSzCsrG)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Usuario escolhe Tesoura
+[![Screenshot-20211227-123915.jpg](https://i.postimg.cc/BbKw0MLv/Screenshot-20211227-123915.jpg)](https://postimg.cc/hQK0880F)
+
+## Usuario escolhe Papel
+[![Screenshot-20211227-123920.jpg](https://i.postimg.cc/tgvrnLFT/Screenshot-20211227-123920.jpg)](https://postimg.cc/VSM93ZGQ)
