@@ -8,7 +8,7 @@ class Game extends StatefulWidget {
 
 class _GameState extends State<Game> {
   var _imageApp = AssetImage("images/padrao.png");
-  var _message = "Escolha uma opção abaixo";
+  var _messageDefault = "Escolha uma opção abaixo";
 
   void _optionsSelect(String userChoice) {
     var options = ["pedra", "papel", "tesoura"];
@@ -43,18 +43,18 @@ class _GameState extends State<Game> {
         (userChoice == "tesoura" && appChoice == "papel") ||
         (userChoice == "papel" && appChoice == "pedra")) {
       setState(() {
-        this._message = "Parabéns!!! Você ganhou :)";
+        this._messageDefault = "Parabéns!!! Você ganhou :)";
       });
       //App Ganhador
     } else if ((appChoice == "pedra" && userChoice == "tesoura") ||
         (appChoice == "tesoura" && userChoice == "papel") ||
         (appChoice == "papel" && userChoice == "pedra")) {
       setState(() {
-        this._message = "Você perdeu :(";
+        this._messageDefault = "Você perdeu :(";
       });
     } else {
       setState(() {
-        this._message = "Empatamos ;)";
+        this._messageDefault = "Empatamos ;)";
       });
     }
   }
@@ -68,10 +68,6 @@ class _GameState extends State<Game> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          //1) text
-          //2) imagem
-          //3) text resultado
-          //4) Linha 3 imagens
           Padding(
             padding: EdgeInsets.only(top: 32, bottom: 16),
             child: Text(
@@ -84,10 +80,13 @@ class _GameState extends State<Game> {
           Padding(
             padding: EdgeInsets.only(top: 32, bottom: 16),
             child: Text(
-              this._message,
+              this._messageDefault,
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 5, bottom: 25),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -112,7 +111,7 @@ class _GameState extends State<Game> {
                   "images/tesoura.png",
                   height: 100,
                 ),
-              )
+              ),
             ],
           )
         ],
