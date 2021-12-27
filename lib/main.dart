@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:jokenpo/jogo.dart';
+
+import 'game.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Jogo(),
+    home: Game(),
     debugShowCheckedModeBanner: false,
   ));
 }
